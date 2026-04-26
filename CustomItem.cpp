@@ -15,7 +15,7 @@ std::string CustomItem::composeItem() {
 	for ( const auto& pair: toppings ) {
 		out << pair.first << ": " << pair.second << " oz\n";
 	}
-	out << "Price: $"<< std::fixed<< std::setprecision(2);
+	out << "Price: $"<< std::fixed<< std::setprecision(2)<<price;
 	return out.str();
 }
 
