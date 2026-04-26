@@ -9,18 +9,13 @@ void CustomItem::addTopping(std::string topping) {
 	price += 0.40;
 }
 std::string CustomItem::composeItem() {
-        std::string s;
-	s = "Custom Size: " + size + "\n";
-        s += "Toppings:\n";
+        std::ostringstream out;
+	out << "Custom Size: " << size << "\n";
+        out << "Toppings:\n";
 	for ( const auto& pair: toppings ) {
-		s += pair.first;
-		s += ": ";
-		s += std::to_string(pair.second);
-		s += " oz";
-		s += "\n";
+		out << pair.first << ": " << pair.second << " oz\n";
 	}
-	s += "Price: $";
-        s += std::to_string(price);
-	return s;
+	out << "Price: $"<< std::fixed<< std::setprecision(2);
+	return out.str();
 }
 
