@@ -1,6 +1,7 @@
 #include "CustomItem.h"
 #include "IceCreamItem.h"
-
+#include <iomanip>
+#include <sstream>
 CustomItem::~CustomItem() {
 }
 void CustomItem::addTopping(std::string topping) {
@@ -9,7 +10,8 @@ void CustomItem::addTopping(std::string topping) {
 }
 std::string CustomItem::composeItem() {
         std::string s;
-	s = "Custom Size: " + size + "\n" + "Toppings:" + "\n";
+	s = "Custom Size: " + size + "\n";
+        s += "Toppings:\n";
 	for ( const auto& pair: toppings ) {
 		s += pair.first;
 		s += ": ";
