@@ -13,7 +13,7 @@ public:
 	// of an IceCreamItem. See the lab writeup and test files
 	// for examples of the format for composeItem.
 	virtual std::string composeItem();
-
+        virtual ~IceCreamItem() = default;
 	// Returns the dollar amount of an ice cream item.
 	virtual double getPrice();
 protected:

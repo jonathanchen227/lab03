@@ -1,22 +1,24 @@
 #include "CustomItem.h"
+#include "IceCreamItem.h"
+
 CustomItem::~CustomItem() {
 }
 void CustomItem::addTopping(std::string topping) {
 	toppings[topping]++;
 	price += 0.40;
 }
-virtual std::string CustomItem::composeItem() {
-	std::string s;
+std::string CustomItem::composeItem() {
+        std::string s;
 	s = "Custom Size: " + size + "\n" + "Toppings:" + "\n";
 	for ( const auto& pair: toppings ) {
 		s += pair.first;
-		s += ": "
-		s += pair.second;
+		s += ": ";
+		s += std::to_string(pair.second);
 		s += " oz";
 		s += "\n";
 	}
 	s += "Price: $";
-	s += price;
+        s += std::to_string(price);
 	return s;
 }
 

@@ -1,6 +1,8 @@
+#include "IceCreamItem.h"
+#include <string>
 class PreMadeItem: public IceCreamItem {
 	protected: 
-		string name;
+		std::string name;
 	public:
 PreMadeItem(std::string n , std::string s ) : IceCreamItem(s){ 
 	name = n;
@@ -10,5 +12,5 @@ PreMadeItem(std::string n , std::string s ) : IceCreamItem(s){
 }
 virtual ~PreMadeItem();
 virtual std::string composeItem();
-}
+};
 

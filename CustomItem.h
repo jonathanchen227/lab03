@@ -1,8 +1,10 @@
-using namespace std;
+
+#include "IceCreamItem.h"
+#include <string>
 #include <map>
 class CustomItem : public IceCreamItem {
 	protected: 
-		map<std::string, int > toppings;
+		std::map<std::string, int > toppings;
 	public:
 		CustomItem(std::string s) : IceCreamItem(s) {
 			if ( size == "small" ) {
