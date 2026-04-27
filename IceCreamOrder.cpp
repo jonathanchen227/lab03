@@ -11,7 +11,6 @@ using namespace std;
 string IceCreamOrder::printBill() const {
 	double totalPrice = 0;
 	string out = "";
-
 	for (size_t i = 0; i < items.size(); i++) {
 		totalPrice += items[i]->getPrice();
 		out += items[i]->composeItem();
