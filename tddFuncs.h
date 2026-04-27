@@ -33,8 +33,7 @@ void assertEquals(const char * const expected,
 		  std::string message,
 		  int lineNumber=-1);
 
-#define ASSERT_EQUALS(expected,actual) \
-  assertEquals(expected,actual,#actual " at " __FILE__ ,  __LINE__ )
+#define ASSERT_EQUALS(expected,actual) assertEquals(expected,actual,#actual " at " __FILE__ ,  __LINE__ )
 
 
 void assertTrue(bool expression, std::string message="", int lineNumber = -1);
