@@ -12,10 +12,10 @@ public:
 	// A virtual method that composes a string with the details
 	// of an IceCreamItem. See the lab writeup and test files
 	// for examples of the format for composeItem.
-	virtual std::string composeItem();
+	virtual std::string composeItem() const;
         virtual ~IceCreamItem() = default;
 	// Returns the dollar amount of an ice cream item.
-	virtual double getPrice();
+	virtual double getPrice() const;
 protected:
 	double price;
 	std::string size;

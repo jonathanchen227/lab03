@@ -8,7 +8,7 @@ void CustomItem::addTopping(std::string topping) {
 	toppings[topping]++;
 	price += 0.40;
 }
-std::string CustomItem::composeItem() {
+std::string CustomItem::composeItem() const{
         std::ostringstream out;
 	out << "Custom Size: " << size << "\n";
         out << "Toppings:\n";
