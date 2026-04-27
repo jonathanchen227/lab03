@@ -20,7 +20,8 @@ class CustomItem : public IceCreamItem {
 		}
 		virtual ~CustomItem();
 		virtual void addTopping(std::string topping);
-		virtual std::string composeItem() const;
+		virtual std::string composeItem();
+		virtual double getPrice();
 };
 
 #endif

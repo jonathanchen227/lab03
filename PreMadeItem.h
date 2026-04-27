@@ -15,6 +15,6 @@ PreMadeItem(std::string n , std::string s ) : IceCreamItem(s){
 	if ( s== "large") {price = 7.50;}
 }
 virtual ~PreMadeItem();
-virtual std::string composeItem() const;
+virtual std::string composeItem();
 };
 #endif

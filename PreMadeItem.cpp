@@ -3,7 +3,7 @@
 #include <iomanip>
 #include <sstream>
 PreMadeItem :: ~PreMadeItem() {}
-std::string PreMadeItem :: composeItem() const {
+std::string PreMadeItem :: composeItem() {
 	std::ostringstream out;
 	out << "Pre-made Size: " << size << "\n";
 	out << "Pre-made Item: " << name << "\n";
