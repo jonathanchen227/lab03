@@ -16,5 +16,6 @@ PreMadeItem(std::string n , std::string s ) : IceCreamItem(s){
 }
 virtual ~PreMadeItem();
 virtual std::string composeItem();
+virtual double getPrice();
 };
 #endif

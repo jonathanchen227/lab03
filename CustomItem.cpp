@@ -18,5 +18,7 @@ std::string CustomItem::composeItem() {
 	out << "Price: $"<< std::fixed<< std::setprecision(2)<<price<<"\n";
 	return out.str();
 }
-
+double CustomItem::getPrice() {
+	return price;
+}
 

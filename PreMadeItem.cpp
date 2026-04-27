@@ -11,3 +11,6 @@ std::string PreMadeItem :: composeItem() {
 	return out.str();
 	
 }
+double PreMadeItem :: getPrice() {
+	return price;
+}
