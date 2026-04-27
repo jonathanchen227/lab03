@@ -1,4 +1,5 @@
-
+#ifndef CUSTOMITEM_H
+#define CUSTOMITEM_H
 #include "IceCreamItem.h"
 #include <string>
 #include <map>
@@ -21,3 +22,5 @@ class CustomItem : public IceCreamItem {
 		virtual void addTopping(std::string topping);
 		virtual std::string composeItem();
 };
+
+#endif

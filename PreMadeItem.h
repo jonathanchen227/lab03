@@ -1,3 +1,7 @@
+#ifndef PREMADEITEM_H
+#define PREMADEITEM_H
+
+
 #include "IceCreamItem.h"
 #include <string>
 class PreMadeItem: public IceCreamItem {
@@ -13,4 +17,4 @@ PreMadeItem(std::string n , std::string s ) : IceCreamItem(s){
 virtual ~PreMadeItem();
 virtual std::string composeItem();
 };
-
+#endif

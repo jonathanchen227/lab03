@@ -37,7 +37,7 @@ void assertEquals(const char * const expected,
   assertEquals(expected,actual,#actual " at " __FILE__ ,  __LINE__ )
 
 
-void assertTrue(bool expression, std::string message="");
+void assertTrue(bool expression, std::string message="", int lineNumber = -1);
 
 #define ASSERT_TRUE(expression) assertTrue(expression,#expression)
 
