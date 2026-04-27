@@ -1,7 +1,7 @@
 #include "IceCreamItem.h"
 
-IceCreamItem::IceCreamItem ( std::string s ) {
-	size = s;
+IceCreamItem::IceCreamItem ( std::string size ) {
+	this->size = size;
 	price = 0.00;
 }
 std::string IceCreamItem::composeItem() const {
